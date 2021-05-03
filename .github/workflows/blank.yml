@@ -24,4 +24,4 @@ jobs:
           host: ${{ secrets.WEB_SSH_HOST }}
           username: ${{ secrets.WEB_SSH_USERNAME }}
           key: ${{ secrets.WEB_SSH_KEY }}
-          script: whoami
+          script: ${{ secrets.WEB_SSH_DEPLOY_COMMAND }}
